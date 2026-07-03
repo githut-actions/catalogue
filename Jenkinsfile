@@ -23,6 +23,18 @@ pipeline {
         
         
         }
+        stage ('Install Dependies')
+            steps {
+                script {
+                    sh """
+                     npm install 
+                     
+                     """
+                
+                }
+            
+            
+            }
     
     
     
