@@ -40,7 +40,7 @@ pipeline {
             
             }
         }
-        stage ('Docker build')
+        stage ('Docker build'){
             steps {
                 script {
                     withAWS(credentials: 'aws-cre', region: 'us-east-1') {
@@ -55,7 +55,7 @@ pipeline {
                     
                     }
                 }
-            }
+        }    }
     
     
     }
