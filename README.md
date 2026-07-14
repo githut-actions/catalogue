@@ -28,3 +28,22 @@ pluggin --> aws credentails
 manage jenkins ---> credenatils ---> kind --> aws credentails --> aws-auth(id)--> ssh-cre --> acess key and secreat key 
 pluggin --> aws steps
 this for api hitting 
+
+install docker plugin on jenkins agent
+
+sudo dnf -y install dnf-plugins-core
+sudo dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker ec2-user
+
+disconnect and connect agent 
+
+run pipeline --> we can see image on ECR --> scan 
+
+testing --> functional testing -->DEV --> devlopers/testers
+            integration testing --> UAT --> here all components needs to communicate properly
+
+
+now image is ready we need to deploy 
