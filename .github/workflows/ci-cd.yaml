@@ -10,3 +10,6 @@ jobs:
       project: roboshop
       component: catalogue
       app_type: node-js
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
