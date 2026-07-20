@@ -1,5 +1,8 @@
 name: CICD
-on: [push]
+on: 
+  push:
+  workflow_dispatch:
+    
 jobs:
   common:
     uses: githut-actions/reusable-workflows/.github/workflows/common.yaml@main
